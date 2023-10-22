@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Onest', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
-body{
-  
-}
-
-/*Barra de navegacion*/
 .offers{
     padding: 20px;
-    background-color: brown;
+    background-color: cadetblue;
     font-size: 20px;
     color: rgb(255, 255, 255);
     letter-spacing: 5px;
@@ -26,15 +21,18 @@ body{
     border-radius: 10px;
 }
 .logo h1{
-    color: #fff;
+    color: #000000;
     padding: 20px;
     border-radius: 10px;
-    background-color: brown;
 }
 
 .logo span{
     font-size: 30px;
-    color: #000000;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    background: black;
+    padding: 10px;
+    border-radius: 40px;
 }
 
 .container{
@@ -53,7 +51,7 @@ body{
     font-size: 20px;
     padding: 20px;
     flex-wrap: wrap;
-    background-color: brown;
+    background-color: cadetblue;
     color: rgb(255, 255, 255);
     border-radius: 10px;
 }
@@ -76,7 +74,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: brown;
+    background-color: cadetblue;
     margin:  0 200px 0 200px;
     padding: 20px;
     border-radius: 5px;
@@ -103,7 +101,6 @@ body{
     padding: 15px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    /* border: 2px solid black; */
     color: #000000;
     margin-right: 30px;
 }
@@ -121,6 +118,7 @@ body{
     font-size: 30px;
     font-weight: 700;
     background-color: #000000;
+
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
@@ -130,11 +128,12 @@ body{
     background-color: #ffffff;
     border: none;
     color: black;
+    transition: 0.5s;
 }
 
 
 .content_background h1 span{
-    background-color: brown;
+    background-color: cadetblue;
     padding: 5px;
     color: white;
     border-radius: 10px;
@@ -142,17 +141,14 @@ body{
 }
 
 .content_main{
-    background: url("../images/imagen\ de\ fondo.webp");
-    background-position: absolute;
+    background: url("../images/imagen de fondo.jpg");
     background-size: cover;
     height: 75.6vh;
     width: 100%;
 }
 
-/*contenido principal*/
-
 .main_Menu-Tittle h1{
-    background-color: brown;
+    background-color: cadetblue;
     margin: 0 100px 0 100px;
     padding: 20px;
     text-align: center;
@@ -166,9 +162,8 @@ body{
     width: 100%;
     max-width: 1200px;
     height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
     margin: auto;
     padding: 20px;
 }
@@ -191,7 +186,7 @@ body{
 
 .main_Menu-Card .card h4{
     margin: 20px;
-    background-color: brown;
+    background-color: cadetblue;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -206,7 +201,7 @@ body{
 }
 
 .main_Content_contact h1{
-    background-color: brown;
+    background-color: cadetblue;
     margin: 0 100px 0 100px;
     padding: 20px;
     text-align: center;
@@ -224,7 +219,7 @@ body{
 }
 .main_Content-card{
     width: 850px;
-    height: 600px;
+    height: 402px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 5px 5px 5px 5px rgba(0.5,0.5,0.5,0.5);
@@ -233,8 +228,7 @@ body{
 }
 .main_Content-card img{
     width: 100%;
-    height: 100%;
-    opacity: 0.9;
+    height: 120%;
 }
 
 .main_Content-card{
@@ -277,10 +271,12 @@ body{
 
 .main_Content-form input{
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     justify-content: start;
-    margin-top: 5px;
+    margin-top: 10px;
     padding-right: 50px;
+    border: none;
+    border-bottom: 1px solid brown;
 }
 
 .main_Content-form button{
@@ -298,16 +294,11 @@ body{
 
 .main_Content-form button:hover{
     background-color: black;
-    border-radius: 0%;
 }
 
 .footer {
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     padding: 2rem;
-    background: brown;
+    background: cadetblue;
     color: white;
     font-weight: 500;
     display: flex;
@@ -315,3 +306,131 @@ body{
     align-items: center;
     gap: 0.2rem;
   }
+
+  .menu_tittle{
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu_tittle h1{
+    padding-bottom: 10px;
+  }
+
+  .menu_tittle a{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    text-decoration:  none;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #000000;
+  }
+
+  .menu_tittle a:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .menu_subtittle{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /** MENU **/
+
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .menu__food{
+    background-color: cadetblue;
+    border-radius: 20px;
+    margin: 1rem;
+    
+  }
+
+  .menu__food-imagen{
+    width: 100%;
+    border-radius: 20px;
+    height: 250px;
+  }
+
+  .menu__food-titulo{
+    font-size: 30px;
+    color: #FFF;
+  }
+
+  .menu__food-precio{
+    color: #ffffff;
+  }
+
+  .menu__food-titulo,
+  .menu__food-precio{
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .menu__food-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__food-buttons a{
+    margin:10px;
+    padding: 10px;
+    background-color: #FFF;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #000000;
+
+  }
+
+  .menu__food-buttons a:hover{
+    background-color: black;
+    color: #FFF;
+  }
+
+  .menu_subtittle {
+    background-color: brown;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+
+
+/**responsive**/
+
+@media (max-width: 667px ) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 20px;
+    }
+    .menu__food-buttons a{
+        margin:10px;
+        padding: 10px;
+        background-color: #FFF;
+        text-decoration: none;
+        border-radius: 15px;
+        text-align: center;
+        color: #000000;
+    
+    }
+}
+
+
+  /** MENU **/
